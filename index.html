@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <script src="scripts/validate.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/data.json" defer></script>
+    <title>Electronics Store</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Electronics Store </h1>
+      <h3>We sell electronic products and accessories</h3>
+    </header>
+    
+    <form name="customer">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="fName">First Name</label><br>
+            <input type="text" id="fName" name="firstName"><br>
+            <span class="alert" id="fNameError"></span><br><br>
+
+
+            <label for="lName">Last Name</label><br>
+            <input type="text" id="lName" name="lastName"><br>
+            <span class="alert" id="lNameError"></span><br><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="number" id="phone" name="phone"><br>
+            <span class="alert" id="phoneError"></span><br><br>
+
+
+            <label for="address1">Address 1</label><br>
+            <input type="text" id="address1" name="address1"><br>
+            <span class="alert" id="address1Error"></span><br><br>
+
+
+            <label for="postalcode">Postal Code</label><br>
+            <input type="text" id="postalcode" name="postalcode"><br>
+            <span class="alert" id="postalCodeError"></span><br><br>
+
+            <label for="date">Order Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+            <span class="alert" id="dateError"></span><br><br>
+
+
+            <label for="city">City</label><br>
+            <input type="text" id="city" name="city"><br>
+            <span class="alert" id="cityError"></span><br><br>
+            
+            <label for="province">Province</label><br>
+            <input type="text" id="province "name="province" list="provincelist"/>
+            <datalist id="provincelist">
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland and Labrador</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NU">Nunavut</option>
+                <option value="YT">Yukon</option>
+            </datalist><br>
+            <span class="alert" id="provinceError"></span><br><br>
+            
+            <label for="shipping"> Express Shipping: +$10</label>
+            <input type="checkbox" id="shipping" name="shipping"><br><br>
+
+
+            <p>Please select your payment option:</p>
+            <label for="mastercard">Mastercard</label>
+            <input type="radio" id="mastercard" name="payment" value="mastercard"><br> 
+            <label for="visa">Visa</label>
+            <input type="radio" id="visa" name="payment" value="visa"><br> 
+            <label for="amex">American Express</label>
+            <input type="radio" id="amex" name="payment" value="amex"><br><br>          
+
+            <input type="submit" value="Submit">
+            <input type="reset"><br><br>
+
+            <label for="total">Your total is:</label>
+            <input type="text" id="total" name="total" value="0" readonly><br><br>
+        </fieldset>
+    </form>
+
+    <div class="container">
+      <h3>Item</h3>
+      <h3>Value</h3>
+      <h3>Amount</h3>
+      <h3>Subtotal</h3>
+      <div>
+        <img id="headphones" alt="headphones">
+        <button plushp>+</button>
+        <p>Headphones</p>
+      </div>
+      <p id="costhp"></p>
+      <p id="amounthp"></p>
+      <p id="subtotalhp"></p>
+
+      <div>
+        <img id="charger" alt="charger">
+        <button plusch>+</button>
+        <p>Charger</p>
+      </div>
+      <p id="costch"></p>
+      <p id="amountch"></p>
+      <p id="subtotalch"></p>
+
+      <div>
+        <img id="laptop" alt="laptop">
+        <button pluslp>+</button>
+        <p>Laptop</p>
+      </div>
+      <p id="costlp"></p>
+      <p id="amountlp"></p>
+      <p id="subtotallp"></p>
+
+      <div>
+        <img id="speakers" alt="speakers">
+        <button plussp>+</button>
+        <p>Speakers</p>
+      </div>
+      <p id="costsp"></p>
+      <p id="amountsp"></p>
+      <p id="subtotalsp"></p>
+
+      <div>
+        <img id="phone-case" alt="phone case">
+        <button pluspc>+</button>
+        <p>Phone case</p>
+      </div>
+      <p id="costpc"></p>
+      <p id="amountpc"></p>
+      <p id="subtotalpc"></p>
+
+    </div>
+    <h4>Customer Info:</h4>
+    <ul id="customer-info"></ul>
+    <h4>You picked the following Items:</h4>
+    <ol id="customer-order"></ol>
+  </body>
+</html>

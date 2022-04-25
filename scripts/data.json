@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "headphones",
+        "cost": 50,
+        "picture": "./images/headphones.png"
+    },
+    {
+        "id": 2,
+        "name": "charger",
+        "cost": 20,
+        "picture": "./images/charger.png"
+    },
+    {
+        "id": 3,
+        "name": "laptop",
+        "cost": 500,
+        "picture": "./images/laptop.png"
+    },
+    {
+        "id": 4,
+        "name": "speakers",
+        "cost": 200,
+        "picture": "./images/speakers.png"
+    },
+    {
+        "id": 5,
+        "name": "phone-case",
+        "cost": 10,
+        "picture": "./images/phone-case.png"
+    }
+]
